@@ -28,7 +28,8 @@ let mixed = ['red', 50, true, null];
 // prideti reiksme i masyvo gala
 // vidurkiai.push(45);
 
-let vidurkiai = [5, 8, 10, 9];
+let vidurkiai = [5, 8, 10];
+console.log('vidurkiai.length ===', vidurkiai.length);
 console.log('vidurkiai ===', vidurkiai);
 
 console.log(vidurkiai[0]); // 0
@@ -37,7 +38,25 @@ console.log(vidurkiai[2]); // 2
 console.log(vidurkiai[3]); // 3
 console.log('======================================');
 
-for (let i = 0; i < 4; i++) {
+for (let i = 0; i < vidurkiai.length; i++) {
   // console.log(i);
   console.log(vidurkiai[i]);
+}
+console.log('======================================');
+
+for (let i = 0; i < vidurkiai.length; i++) {
+  const skaicius = vidurkiai[i];
+  console.log(skaicius * 2);
+}
+console.log(' for of loop ======================================');
+
+// for of loop
+// ciklas skirtas pasiimti visas masyvo reiksmes
+
+for (let skaicius of vidurkiai) {
+  console.log(skaicius);
+}
+
+for (let raide of 'Laba diena') {
+  console.log(raide.toUpperCase() + ', ');
 }
