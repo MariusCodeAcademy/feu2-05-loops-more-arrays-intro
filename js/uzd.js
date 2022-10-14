@@ -39,3 +39,14 @@ for (let i = min; i <= max; i++) {
 // 22. sudauginti skaicius nuo -4 iki 7 ir rezultata atspausdinti padalinta is 3.
 
 // 23. atspausdinti skaicius stringe nuo 44 iki 66 atskirtus "|| " zenklu
+
+// https://www.w3schools.com/js/js_precedence.asp
+let num1 = 5;
+// reikm++ => pirma paimama reiksme, ir po to pridedamas vienetas
+// ++reikm => pirma pridedamas vienetas ir po to paimama reiksme,
+let sak = `eles numeris yra ${++num1} !!!`;
+console.log('sak ===', sak);
+console.log('num1 ===', num1);
+
+// let num2 = num1++;
+let num2 = (num1 = num1 + 1);
