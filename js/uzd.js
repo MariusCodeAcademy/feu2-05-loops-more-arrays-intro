@@ -52,7 +52,9 @@ for (let i = min; i <= max; i++) {
 // ciklas
 // dedam prie total
 // rezultata padalinam is 3
-console.group('22. sudauginti skaicius nuo 4 iki 17 ir rezultata atspausdinti padalinta is 3');
+console.groupCollapsed(
+  '22. sudauginti skaicius nuo 4 iki 17 ir rezultata atspausdinti padalinta is 3'
+);
 total = 1;
 
 for (let i = 4; i <= 17; i++) {
@@ -104,3 +106,41 @@ let num2 = (num1 = num1 + 1);
 // 26. sugeneruoti 3 random skaicius nuo 1 iki 10 ir pranesti:
 // a: ar buvo skaicius didesnis uz 7?
 // b: ar buvo skaicius mazesnis uz 3?
+
+// 14. atspausdinti konsoleje skaicius nuo 3 iki 25, jei skaicius lyginis prirasyti prie jo zodeli 'lyginis' pvz
+// 3
+// 4 lyginis
+// 5
+// 6 lyginis
+// ....
+// 14.1 prideti dar prie skaiciu kurie yra 3 kartotiniai 'triju kartotinis'
+// pvz
+// 3 triju kartotinis
+// 4 lyginis
+// 5 triju kartotinis
+// 6 lyginis
+// ....
+
+console.group('14. atspausdinti konsoleje skaicius nuo 3 iki 25,');
+
+for (let i = 3; i <= 25; i++) {
+  let rezultatas = '';
+  if (i % 2 === 0 && i % 3 === 0) {
+    console.log(`${i} lyginis ir triju kartotinis`);
+  } else if (i % 2 === 0) {
+    console.log(`${i} lyginis`);
+  } else if (i % 3 === 0) {
+    console.log(`${i} triju kartotinis`);
+  } else {
+    console.log(i);
+  }
+  console.log('rezultatas ===', rezultatas);
+}
+/*
+spausdinu visus skaicius bet
+1, jei skaicius yra lyginis tai pridedu zodi lyginis ir nespausdinu be zodzio
+2. jei skaicius yra triju kartotinis tai spauzdinu 'triju kartotinis' ir nespausdinu be zodzio
+3. jei skai yra ir lyginis ir triju kartotinis tai spausdinu abu zodzius 
+*/
+
+console.groupEnd();
