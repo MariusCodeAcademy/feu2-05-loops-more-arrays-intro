@@ -45,15 +45,36 @@ let num1 = 5;
 // reikm++ => pirma paimama reiksme, ir po to pridedamas vienetas
 // ++reikm => pirma pridedamas vienetas ir po to paimama reiksme,
 let sak = `eles numeris yra ${++num1} !!!`;
-console.log('sak ===', sak);
-console.log('num1 ===', num1);
+// console.log('sak ===', sak);
+// console.log('num1 ===', num1);
 
 // let num2 = num1++;
 let num2 = (num1 = num1 + 1);
 
 // 24. Suskaiciuoti kie yra skaiciau 3 kartotiniu nuo 12 iki 57
 
-// 25. suskaiciuoti koks butu vidurkis skaiciu nuo 45 iki 87
+{
+  // 25. suskaiciuoti koks butu vidurkis skaiciu nuo 45 iki 87
+
+  // kintamojo bendrai sumai total
+  let total = 0;
+  // kintamojo kiekElBuvo
+  let kiekElBuvo = 0;
+  // ciklas nuo 45 iki 87
+  for (let i = 45; i <= 87; i++) {
+    //// sumuojam visus einamus skaiciu i total
+    total = total + i;
+    // kiek skaiciu buvo nuo 45 iki 87
+    // kiek buvo skaiciu didinti vienetu
+    kiekElBuvo++;
+  }
+  console.log('total ===', total);
+  console.log('kiekElBuvo ===', kiekElBuvo);
+  // padalinti suma is kiek el
+  const avg = total / kiekElBuvo;
+  // atspausdinti galutine reiksme
+  console.log('avg ===', avg);
+}
 
 // 26. sugeneruoti 3 random skaicius nuo 1 iki 10 ir pranesti:
 // a: ar buvo skaicius didesnis uz 7?
