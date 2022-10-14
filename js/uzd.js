@@ -50,3 +50,11 @@ console.log('num1 ===', num1);
 
 // let num2 = num1++;
 let num2 = (num1 = num1 + 1);
+
+// 24. Suskaiciuoti kie yra skaiciau 3 kartotiniu nuo 12 iki 57
+
+// 25. suskaiciuoti koks butu vidurkis skaiciu nuo 45 iki 87
+
+// 26. sugeneruoti 3 random skaicius nuo 1 iki 10 ir pranesti:
+// a: ar buvo skaicius didesnis uz 7?
+// b: ar buvo skaicius mazesnis uz 3?

@@ -36,6 +36,7 @@ console.log(vidurkiai[1]); // 1
 console.log(vidurkiai[2]); // 2
 console.log(vidurkiai[3]); // 3
 console.log('======================================');
+
 for (let i = 0; i < 4; i++) {
   // console.log(i);
   console.log(vidurkiai[i]);
