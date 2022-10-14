@@ -3,6 +3,16 @@ console.log('uzd.js');
 
 // 13. atspausdinti konsoleje skaicius nuo 12 iki 24 padaugintus is 3
 
+console.groupCollapsed('13. atspausdinti konsoleje skaicius nuo 12 iki 24 padaugintus is 3');
+for (let i = 12; i <= 24; i++) {
+  let padaugintaIsTriju = i * 3;
+  console.log(padaugintaIsTriju);
+  let pridetaKeturi = i + 4;
+  console.log(pridetaKeturi);
+  let bendraSuma = padaugintaIsTriju + pridetaKeturi;
+  console.log('bendraSuma ===', bendraSuma);
+}
+console.groupEnd();
 // 1. sukam cikla nuo 12 iki 24
 // 2. kiekvieno ciklo metu mes einamaja reiksme (index) padauginam is 3 ir atspausdinam
 for (let i = 12; i <= 24; i++) {
@@ -38,6 +48,21 @@ for (let i = min; i <= max; i++) {
 
 // 22. sudauginti skaicius nuo -4 iki 7 ir rezultata atspausdinti padalinta is 3.
 
+// total
+// ciklas
+// dedam prie total
+// rezultata padalinam is 3
+console.group('22. sudauginti skaicius nuo 4 iki 17 ir rezultata atspausdinti padalinta is 3');
+total = 1;
+
+for (let i = 4; i <= 17; i++) {
+  total *= i;
+}
+console.log('total ===', total);
+console.log('total / 3 ===', total / 3);
+
+console.groupEnd();
+
 // 23. atspausdinti skaicius stringe nuo 44 iki 66 atskirtus "|| " zenklu
 
 // https://www.w3schools.com/js/js_precedence.asp
@@ -68,12 +93,12 @@ let num2 = (num1 = num1 + 1);
     // kiek buvo skaiciu didinti vienetu
     kiekElBuvo++;
   }
-  console.log('total ===', total);
-  console.log('kiekElBuvo ===', kiekElBuvo);
+  // console.log('total ===', total);
+  // console.log('kiekElBuvo ===', kiekElBuvo);
   // padalinti suma is kiek el
   const avg = total / kiekElBuvo;
   // atspausdinti galutine reiksme
-  console.log('avg ===', avg);
+  // console.log('avg ===', avg);
 }
 
 // 26. sugeneruoti 3 random skaicius nuo 1 iki 10 ir pranesti:
